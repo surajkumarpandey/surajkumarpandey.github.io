@@ -19,6 +19,32 @@
         
 	<!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .rank-badge {
+                display: inline-block;
+                background-color: #007bff;
+                color: white;
+                padding: 2px 8px;
+                border-radius: 4px;
+                font-size: 0.85em;
+                margin-left: 8px;
+                font-weight: bold;
+            }
+            .rank-a-star {
+                background-color: #d32f2f;
+            }
+            .rank-a {
+                background-color: #f57c00;
+            }
+            .rank-b {
+                background-color: #388e3c;
+            }
+            .journal-impact {
+                font-size: 0.9em;
+                color: #555;
+                margin-top: 4px;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -62,7 +88,7 @@
                             Robotics Lab, Department of Computer Science & Engineering, <br/>
                             Indian Institute of Technology Guwahati <br/>
                             Research Interests: Bio-Inspired Algorithms, Robotics, Machine Learning, Computer Vision, Cyber-Physical Systems, Chaotic Systems <br/>
-                            (Under the supervision of <a href="https://sites.google.com/view/shivashankarbnair" target=”_blank” style="text-decoration:none; color:gray;">Prof. SHIVASHANKAR B. NAIR</a>) <br/>
+                            (Under the supervision of <a href="https://sites.google.com/view/shivashankarbnair" target="_blank" style="text-decoration:none; color:gray;">Prof. SHIVASHANKAR B. NAIR</a>)<br/>
                             <i style="color:gray;">17.07.2018-continuing</i>
                             
                             </p>
@@ -95,64 +121,89 @@
                     <div class="col-lg-10" >
                         <h1 style="text-align:center;">Activities </h1>
                         <h4 style="text-shadow: 2px 2px gray;">Publications</h4>
-                            <p>
-                            <b><a href="https://10.1109/IoTaIS50849.2021.9359702" target=”_blank” style="text-decoration:none; color:black;">Smart Patch: An IoT based Anti Child-Trafficking Solution</a></b>,<br/>
-                            Suraj Kumar Pandey, Sonia Sonia, Tushar Semwal, Shivashankar B. Nair,<br/>
-                            IEEE International Conference on Internet of Things and Intelligence System (IOTAIS)
-			    </p>
-			    
-			    <p>
-                            <b><a href="https://10.1007/978-3-031-25825-1_35" target=”_blank” style="text-decoration:none; color:black;">Immuno-inspired Augmentation of Siamese Neural Network for Multi-Class Classification</a></b>,<br/>
-                            Suraj Kumar Pandey, Shivashankar B. Nair,<br/>
-                            IVCNZ 2022 Image and Vision Computing New Zealand, (Conference Rank: CORE2021 Australasian B) 
-			    </p>
-			    
-			    
-			    
-			    <p>
-                            <b><a href="https://gecco-2023.sigevo.org/HomePage" target=”_blank” style="text-decoration:none; color:black;">Enhancing Siamese Neural Networks for Multi-class Classification: An Immuno-inspired approach</a></b>,<br/>
-                            Suraj Kumar Pandey, Shivashankar B. Nair,<br/>
-                            GECCO 2023, The Genetic and Evolutionary Computation Conference, (Hot off the Press Track), (Conference Rank: CORE2021 A)<br/>  
-			    </p>
-
-
-			    <p>
-                            <b><a href="https://doi.org/10.1609/aaai.v38i21.30493" target=”_blank” style="text-decoration:none; color:black;">Neuroevolution of a Multi-Generator GAN</a></b>,<br/>
-                            Suraj Kumar Pandey<br/>
-                            AAAI 2024, The 38th Annual AAAI Conference on Artificial Intelligence, (Student Abstract), (Conference Rank: CORE2023 A*)<br/>  
-			    </p>
-
-			    <b><a href="https://doi.org/10.1145/3638530.3654392" target=”_blank” style="text-decoration:none; color:black;">Onboard Class Incremental Learning for Resource-Constrained scenarios using Genetic Algorithm and TinyML</a></b>,<br/>
-                            Suraj Kumar Pandey, Shivashankar B. Nair<br/>
-			    Genetic and Evolutionary Computation Conference (GECCO 2024), (Conference Rank: CORE2023 A)<br/>  
-			    
-		            </p>
-
-			    <b><a href="" target=”_blank” style="text-decoration:none; color:black;">A Deep-Learning based real-time License Plate Recognition system for resource-constrained scenarios</a></b>,<br/>
-                            K. Narayan, Suraj Kumar Pandey<br/> (Accepted) <br/>
-		            </p>
-			    
-			    <b><a href="" target=”_blank” style="text-decoration:none; color:black;">ChaoticImmuneNet: A Chaos-driven Immunity inspired Neural Network paradigm for Embodied Intelligence in Resource-Constrained Devices</a></b>,<br/>
-                    	    Suraj Kumar Pandey, Shivashankar B. Nair<br/>        
-		   	    </p>
-
-			    <b><a href="" target=”_blank” style="text-decoration:none; color:black;">GADANN: A Virtual-to-Real Knowledge Transfer & Adaptation method for Edge Devices</a></b>,<br/>
-                            Suraj Kumar Pandey, Shivashankar B. Nair<br/>
-		            </p>
-
-			     <b><a href="" target=”_blank” style="text-decoration:none; color:black;">RoboDA: A Dataset for Domain Adaptation in Robot Vision</a></b>,<br/>
-                            Suraj Kumar Pandey, Shivashankar B. Nair<br/>
-		            </p>
-
-			    <p><b>Under Preparation:</b></p>
-			    <b><a href="" target=”_blank” style="text-decoration:none; color:black;">Decentralized Multi-Robot Foraging using a Cloning Controller”</a></b>,<br/>
-                            H. Bijwe, Suraj Kumar Pandey, Shivashankar B. Nair<br/>
-		            </p>
+                        
+                        <h5 style="text-shadow: 1px 1px gray; margin-top: 20px; border-bottom: 2px solid #333; padding-bottom: 10px;">Journals</h5>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1080/02564602.2025.2485900" target="_blank" style="text-decoration:none; color:black;">RoboDA: A Dataset for Domain Adaptation in Robot Vision</a></b>
+                            <br/>
+                            Pandey, S. K., &amp; Nair, S. B. (2025). IETE Technical Review, 1–14.
+                            <div class="journal-impact">
+                                📊 <i>Journal Impact Factor (Approx): 1.2 | Quartile: Q3-Q4</i>
+                            </div>
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1016/j.iot.2025.101615" target="_blank" style="text-decoration:none; color:black;">GADANN: A Virtual-to-Real Knowledge Transfer and Adaptation Method for Edge Devices</a></b>
+                            <br/>
+                            Suraj Kumar Pandey, Shivashankar B. Nair. Internet of Things, Volume 32, 2025, 101615.
+                            <div class="journal-impact">
+                                📊 <i>Journal Impact Factor (Approx): 3.5-4.0 | Quartile: Q1</i>
+                            </div>
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1145/3764930" target="_blank" style="text-decoration:none; color:black;">ChaoticImmuneNet: A Chaos-driven Immunity Inspired Neural Network Paradigm for Embodied Intelligence in Resource-Constrained Devices</a></b>
+                            <br/>
+                            Suraj Pandey and Shivashankar Nair. J. Emerg. Technol. Comput. Syst. (August 2025).
+                            <div class="journal-impact">
+                                📊 <i>Journal Impact Factor (Approx): 1.5-2.0 | Quartile: Q2</i>
+                            </div>
+                        </p>
+                        
+                        <h5 style="text-shadow: 1px 1px gray; margin-top: 25px; border-bottom: 2px solid #333; padding-bottom: 10px;">Conferences</h5>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://10.1109/IoTaIS50849.2021.9359702" target="_blank" style="text-decoration:none; color:black;">Smart Patch: An IoT Based Anti Child-Trafficking Solution</a></b>
+                            <br/>
+                            S. K. Pandey, Sonia, T. Semwal and S. B. Nair. 2020 IEEE International Conference on Internet of Things and Intelligence System (IoTaIS), Indonesia.
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://10.1007/978-3-031-25825-1_35" target="_blank" style="text-decoration:none; color:black;">Immuno-inspired Augmentation of Siamese Neural Networks for Multi-Class Classification</a></b>
+                            <br/>
+                            S. K. Pandey and S. B. Nair. IVCNZ 2022 Image and Vision Computing New Zealand, 24-25 November 2022.
+                            <span class="rank-badge rank-b">CORE2021 B</span>
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1145/3583133.3595827" target="_blank" style="text-decoration:none; color:black;">Enhancing Siamese Neural Networks for Multiclass Classification: An Immuno-inspired Approach</a></b>
+                            <br/>
+                            S. K. Pandey and S. B. Nair. GECCO 2023, Lisbon, Portugal, July 15-19.
+                            <span class="rank-badge rank-a">CORE2023 A</span>
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1609/aaai.v38i21.30493" target="_blank" style="text-decoration:none; color:black;">Neuroevolution of a Multi-Generator GAN</a></b>
+                            <br/>
+                            S. K. Pandey. AAAI-24, Vancouver, Canada, February 20-27, 2024.
+                            <span class="rank-badge rank-a-star">CORE2023 A*</span>
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1145/3638530.3654392" target="_blank" style="text-decoration:none; color:black;">Onboard Class Incremental Learning for Resource-Constrained Scenarios Using Genetic Algorithm and TinyML</a></b>
+                            <br/>
+                            S. K. Pandey and S. B. Nair. GECCO '24 Companion.
+                            <span class="rank-badge rank-a">CORE2023 A</span>
+                        </p>
+                        
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b><a href="https://doi.org/10.1007/978-3-031-78498-9_16" target="_blank" style="text-decoration:none; color:black;">License Plate Recognition System</a></b>
+                            <br/>
+                            Mohan, K., Pandey, S.K. ICPR 2024, LNCS 15320.
+                            <span class="rank-badge rank-b">CORE2023 B</span>
+                        </p>
+                        
+                        <p style="color:black;text-align:left;">
+                            <b>Decentralized Multi-Robot Foraging Using a Cloning Controller</b>
+                            <br/>
+                            H. Bijwe, S. K. Pandey and S. B. Nair. <i style="color:gray;">(Pre-Review)</i>
+                        </p>
 			    
 			 
-			 <h4 style="text-shadow: 2px 2px gray; text-align:right;">Invited Talks/Demonstrations</h4>
+			 <h4 style="text-shadow: 2px 2px gray; text-align:right; margin-top: 30px;">Invited Talks/Demonstrations</h4>
                             <p style="text-align:right;">
-                            <b>TEQIP-III workshop on Recent Trends in Embedded System for IoT and Mechatronics (RTESTM-2019), <br/>
+                            <b>TEQIP-III Workshop on Recent Trends in Embedded System for IoT and Mechatronics (RTESTM-2019), <br/>
                             National Institute of Technology Arunachal Pradesh</b>,<br/>
                             Prof. Shivashankar B. Nair, Suraj Pandey, Divya D. Kulkarni and Menaxi Bagchi<br/>
                             <i style="color:black;">24.09.2019-28.09.2019</i>
@@ -166,7 +217,7 @@
 			    </p>
 			    
 			    <p style="text-align:right;">
-                            <b>TEQIP FDP organized by the Dept. of Mechanical Engineering, <br/>
+                            <b>TEQIP FDP Organized by the Dept. of Mechanical Engineering, <br/>
                             Indian Institute of Technology Guwahati</b>,<br/>
                             Prof. Shivashankar B. Nair, Suraj Pandey, Divya D. Kulkarni and Menaxi Bagchi<br/>
                             <i style="color:black;">03.2019</i>
@@ -175,57 +226,57 @@
 			 
 			 <h4 style="text-shadow: 2px 2px gray;">Events</h4>
                             <p >
-                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target=”_blank” style="text-decoration:none; color:black;">17th National Frontiers of Engineering (NatFoE) Symposium 2023</a></b>,<br/>
-                            NatFoE'23 was organised by the Indian National Academy of Engineering in collaboration with Birla Institute of Technology Mesra under the aegis of INAE-SERB conclave on Atmanirbhar Technologies -Engineering Secured Future <br/>
+                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">17th National Frontiers of Engineering (NatFoE) Symposium</a></b>,<br/>
+                            NatFoE'23 was organised by the Indian National Academy of Engineering in collaboration with Birla Institute of Technology Mesra under the aegis of INAE-SERB conclave on Atmospheric Science and Technology<br/>
 			    Nominated from the Institute for participation in the research symposium<br/>
                             <i style="color:black;">24.06.2023-26.06.2023</i>
 			    </p>
 			    
 			    <p >
-                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target=”_blank” style="text-decoration:none; color:black;">Research Week with Google, Google Research India</a></b>,<br/>
+                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">Research Week with Google, Google Research India</a></b>,<br/>
                             Selected for participation in the research symposium<br/>
                             <i style="color:black;">08.02.2022-11.02.2022</i>
 			    </p>
 			    
 			    <p  >
-                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target=”_blank” style="text-decoration:none; color:black;">TOYCATHON 2021</a></b>,<br/>
+                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">TOYCATHON 2021</a></b>,<br/>
                             Reached the finals of the nationwide gaming Hackathon which was inaugurated by Hon'ble Prime Minister Narendra Modi<br/>
                             <i style="color:black;">05.2021</i>
 			    </p>
 
 			<h4 style="text-shadow: 2px 2px gray;">Grants and Volunteering</h4>
                             <p >
-                            <b><a href="" target=”_blank” style="text-decoration:none; color:black;">AAAI-24 student scholarship and volunteer program</a></b>,<br/>
+                            <b><a href="" target="_blank" style="text-decoration:none; color:black;">AAAI-24 Student Scholarship and Volunteer Program</a></b>,<br/>
                             Awarded scholarship and volunteering opportunity at the AAAI 2024 conference (CORE A*).<br/>
                             <i style="color:black;">24.06.2023-26.06.2023</i>
-			    
+			    </p>
 			    	
 			    
                         <h4 style="text-shadow: 2px 2px gray; text-align:right;">Mini-Projects</h4>
                             <p style="text-align:right;">
-                            <b>Gait Mapping using IMU sensor and ESP8266</b><br/>
-                            <a href="https://github.com/surajkumarpandey/Gait-mapping-using-ESP8266-and-MPU6050" target=”_blank” style="text-decoration:none; color:black;">Github Repo</a>
+                            <b>Gait Mapping using IMU Sensor and ESP8266</b><br/>
+                            <a href="https://github.com/surajkumarpandey/Gait-mapping-using-ESP8266-and-MPU6050" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
                             </p>
                                                         
                             <p style="text-align:right;">
                             <b>Interfacing 3D Robot Simulator (<i>Webots</i>) with Prolog</b><br/>
-                            <a href="https://github.com/surajkumarpandey/Python-Prolog-Socket-Communication-Prolog-based-Webots-control" target=”_blank” style="text-decoration:none; color:black;">Github Repo</a>
+                            <a href="https://github.com/surajkumarpandey/Python-Prolog-Socket-Communication-Prolog-based-Webots-control" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
                             </p>
                             
                             <p style="text-align:right;">
                             <b>Object Localisation using Genetic Algorithm</b><br/>
-                            <a href="https://github.com/surajkumarpandey/Genetic-Algorithm-for-object-detection" target=”_blank” style="text-decoration:none; color:black;">Github Repo</a>
+                            <a href="https://github.com/surajkumarpandey/Genetic-Algorithm-for-object-detection" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
                             </p>
 			    
 			<h4 style="text-shadow: 2px 2px gray;">Open Source Contribution</h4>
                             <p>
-                            <b>Tartarus for Raspberry Pi </b><br/>
-                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus/blob/master/Raspberry-Pi/README.md" target=”_blank” style="text-decoration:none; color:black;">Github Repo</a>
+                            <b>Tartarus for Raspberry Pi</b><br/>
+                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus/blob/master/Raspberry-Pi/README.md" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
                             </p>
 			    
 			    <p>
-                            <b>Text-to-Speech and other functionalities for Tartarus </b><br/>
-                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus" target=”_blank” style="text-decoration:none; color:black;">Github Repo</a>
+                            <b>Text-to-Speech and Other Functionalities for Tartarus</b><br/>
+                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
                             </p>
                                                         
                            
@@ -247,19 +298,19 @@
                         <h1>Socials </h1>
                         <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">Know me professionally</h4>
                             <p style="color:black;text-align:left;" >
-                            <a href="https://in.linkedin.com/in/surajkumarpandey" target=”_blank” style="text-decoration:none;">Linkedin</a><br/>
-			     <a href="https://www.researchgate.net/profile/Suraj-Pandey-4" target=”_blank” style="text-decoration:none;">Researchgate</a><br/>
+                            <a href="https://in.linkedin.com/in/surajkumarpandey" target="_blank" style="text-decoration:none;">Linkedin</a><br/>
+			     <a href="https://www.researchgate.net/profile/Suraj-Pandey-4" target="_blank" style="text-decoration:none;">Researchgate</a><br/>
 			    </p>
                         <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">My leisure space</h4>
                             <p style="color:black;text-align:left;" >
                             <b>Writing</b><br/>
-                            <a href="http://surrealsuraj.blogspot.com/" target=”_blank” style="text-decoration:none; color:gray;">Blogspot</a><br/>
-                            <a href="https://surajkpandey.medium.com/" target=”_blank” style="text-decoration:none; color:gray;">Medium</a>
+                            <a href="http://surrealsuraj.blogspot.com/" target="_blank" style="text-decoration:none; color:gray;">Blogspot</a><br/>
+                            <a href="https://surajkpandey.medium.com/" target="_blank" style="text-decoration:none; color:gray;">Medium</a>
                             </p>
                             
                             <p style="color:black;text-align:left;" >
                             <b>Game Development</b><br/>
-                            <a href="https://play.google.com/store/apps/details?id=comhanuman.endlesshanuman.game" target=”_blank” style="text-decoration:none; color:gray;">Android</a>
+                            <a href="https://play.google.com/store/apps/details?id=comhanuman.endlesshanuman.game" target="_blank" style="text-decoration:none; color:gray;">Android</a>
                             </p>
                             
                             
@@ -317,7 +368,7 @@
 
         <!-- Map-->
         <div class="map" id="contact">
-        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14319.988544916596!2d91.68743913985139!3d26.19677143505719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5aea122132c3%3A0x44767bb468a831d1!2sIIT%20Guwahati%2C%20Guwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1679338954034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14319.988544916596!2d91.68743913985139!3d26.19677143505719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5aea12213"></iframe>
 	</div>
         <!-- Footer-->
         <footer class="footer text-center">
@@ -337,7 +388,7 @@
                 <p class="text-muted small mb-0">Copyright &copy; Suraj Kumar Pandey 2022 <br/> Email: suraj18a@iitg.ac.in, pandey.suraj3@gmail.com </p> 
 		<!-- hitwebcounter Code START -->
 <a href="" target="_blank" style="text-decoration: None;"> Visitor Count: 
-<img src="https://hitwebcounter.com/counter/counter.php?page=8022650&style=0011&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                    
+<img src="https://hitwebcounter.com/counter/counter.php?page=8022650&style=0011&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                              
                                     
                  </div>
         </footer>
