@@ -44,6 +44,69 @@
                 color: #555;
                 margin-top: 4px;
             }
+            .skill-category {
+                margin-bottom: 25px;
+            }
+            .skill-category h5 {
+                color: #333;
+                font-weight: bold;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+            .skill-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                text-align: left;
+            }
+            .skill-tag {
+                display: inline-block;
+                background-color: #f0f0f0;
+                border: 1px solid #ddd;
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 0.9em;
+                color: #333;
+            }
+            .contact-card {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 40px;
+                border-radius: 10px;
+                text-align: center;
+                margin: 30px 0;
+            }
+            .contact-card h3 {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+            }
+            .contact-card p {
+                font-size: 1.1em;
+                margin-bottom: 10px;
+            }
+            .contact-info {
+                margin-top: 20px;
+            }
+            .contact-info a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 0 10px;
+                display: inline-block;
+            }
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+            .achievement-item {
+                background-color: #f9f9f9;
+                padding: 15px;
+                margin-bottom: 15px;
+                border-left: 4px solid #667eea;
+                border-radius: 4px;
+            }
+            .achievement-item b {
+                color: #333;
+            }
         </style>
     </head>
     <body id="page-top">
@@ -53,9 +116,11 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">Explore</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="sidebar-nav-item"><a href="#about">About</a></li>
+                <li class="sidebar-nav-item"><a href="#education">Education</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Experience</a></li>
+                <li class="sidebar-nav-item"><a href="#skills">Skills</a></li>
                 <li class="sidebar-nav-item"><a href="#activities">Activities</a></li>
-                <!--<li class="sidebar-nav-item"><a href="#scribbles">Scribbles</a></li>-->
                 <li class="sidebar-nav-item"><a href="#socials">Socials</a></li>
                 <li class="sidebar-nav-item"><a href="#mylens">My Lens</a></li>
                 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
@@ -66,30 +131,76 @@
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-1">Suraj Kumar Pandey</h1>
-<!--                <h3 class="mb-5"><em>Research Scholar, Indian Institute of Technology Guwahati</em></h3> -->
-                <a class="btn btn-primary btn-xl" href="#portfolio">Explore</a>
+                <p class="mb-5"><em>AI Researcher & Data Scientist</em></p>
+                <a class="btn btn-primary btn-xl" href="#about">Explore</a>
             </div>
         </header>
-        <!-- Portfolio-->
+
+        <!-- About -->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>About</h1>
+                        <p style="color:black;text-align:left; font-size: 1.1em;">
+                            I am a researcher and engineer focused on designing efficient and adaptive Artificial Intelligence systems for resource-constrained environments, 
+                            particularly in Cyber-Physical Systems and edge devices. My work intersects bio-inspired algorithms, embodied intelligence, and real-world learning, 
+                            with emphasis on handling noisy, non-stationary data through techniques such as neuroevolution, domain adaptation, and continual learning.
+                        </p>
+                        <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left; margin-top: 25px;">Research Interests</h4>
+                        <p style="color:black;text-align:left;">
+                            <b>Artificial Intelligence</b> • <b>Generative Machine Learning</b> • <b>Neuroevolution</b> • <b>Cyber-Physical Systems</b> • 
+                            <b>Bio-inspired Algorithms</b> • <b>TinyML</b> • <b>IoT</b> • <b>Embodied Intelligence</b> • <b>Domain Adaptation</b> • 
+                            <b>Chaotic Systems</b> • <b>Computer Vision</b> • <b>NLP</b> • <b>LLMs</b> • <b>Agentic AI</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="content-section" id="education">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>Education</h1>
+                        <p style="color:black;text-align:left; margin-bottom: 20px;">
+                            <b>Ph.D. in Computer Science and Engineering</b><br/>
+                            Indian Institute of Technology Guwahati<br/>
+                            Thesis: Bio-inspired Learning Strategies for Resource-Constrained Cyber-Physical Systems<br/>
+                            Supervisor: Prof. Shivashankar B. Nair<br/>
+                            <i style="color:gray;">2018–2024</i>
+                        </p>
+                        <p style="color:black;text-align:left;">
+                            <b>B.Tech. in Computer Science and Engineering</b><br/>
+                            College of Technology, G.B. Pant University of Agriculture & Technology<br/>
+                            <i style="color:gray;">2010–2014</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio/Experience-->
         <section class="content-section bg-light" id="portfolio">
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
-                        <h1>Portfolio </h1>
+                        <h1>Experience</h1>
                         <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">Current</h4>
 			    <p style="color:black;text-align:left;" >
                             <b>Data Scientist</b>,<br/>
                             NextGen Invent Corporation <br/>
-                            <i style="color:gray;">20.09.2023-continuing</i>
+                            <i style="color:gray;">20.09.2023–Present</i>
                             </p>
 
 			    <p style="color:black;text-align:left;" >
                             <b>Research Scholar</b>,<br/>
                             Robotics Lab, Department of Computer Science & Engineering, <br/>
                             Indian Institute of Technology Guwahati <br/>
-                            Research Interests: Bio-Inspired Algorithms, Robotics, Machine Learning, Computer Vision, Cyber-Physical Systems, Chaotic Systems <br/>
-                            (Under the supervision of <a href="https://sites.google.com/view/shivashankarbnair" target="_blank" style="text-decoration:none; color:gray;">Prof. SHIVASHANKAR B. NAIR</a>)<br/>
-                            <i style="color:gray;">2018-2024</i>
+                            Research Focus: Bio-Inspired Algorithms, Robotics, Machine Learning, Computer Vision, Cyber-Physical Systems, Chaotic Systems <br/>
+                            (Under the supervision of <a href="https://sites.google.com/view/shivashankarbnair" target="_blank" style="text-decoration:none; color:gray;">Prof. Shivashankar B. Nair</a>)<br/>
+                            <i style="color:gray;">2018–2024</i>
                             
                             </p>
 
@@ -99,15 +210,94 @@
                             <b>Officer (Information Technology)</b>,<br/>
                             Security Printing and Minting Corporation of India Ltd <br/>
                             (A wholly owned schedule 'A' Company of Government of India) <br/>
-                            <i style="color:gray;">15.12.2016-08.07.2018</i>
+                            <i style="color:gray;">15.12.2016–08.07.2018</i>
                             </p>
                             
                             <p style="color:black;text-align:left;" >
                             <b>Young Professional II</b>,<br/>
                             Indian Agricultural Statistics Research Institute, <br/>
                             Indian Council of Agricultural Research <br/>
-                            <i style="color:gray;">24.08.2015-31.08.2016</i>
+                            <i style="color:gray;">24.08.2015–31.08.2016</i>
                             </p>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="content-section" id="skills">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 style="text-align:center;">Technical Skills</h1>
+                        
+                        <div class="skill-category">
+                            <h5>Programming Languages</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">MicroPython</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5>ML & AI Frameworks</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">TensorFlow Lite</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Scikit-learn</span>
+                                <span class="skill-tag">LangChain</span>
+                                <span class="skill-tag">LangGraph</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5>Robotics & Simulation</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Webots</span>
+                                <span class="skill-tag">ROS</span>
+                                <span class="skill-tag">Firebird V</span>
+                                <span class="skill-tag">Lego Mindstorms NXT</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5>Web & Data</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Streamlit</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5>Hardware & IoT</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Arduino</span>
+                                <span class="skill-tag">Raspberry Pi</span>
+                                <span class="skill-tag">ESP8266</span>
+                                <span class="skill-tag">ESP32</span>
+                                <span class="skill-tag">MQTT</span>
+                                <span class="skill-tag">TinyML</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h5>Other Tools</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Linux/Ubuntu</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Octave</span>
+                                <span class="skill-tag">Android Development</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,7 +309,35 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center" style="color:black; text-align:left;">
                     <div class="col-lg-10" >
-                        <h1 style="text-align:center;">Activities </h1>
+                        <h1 style="text-align:center;">Activities</h1>
+
+                        <h4 style="text-shadow: 2px 2px gray;">Teaching & Mentoring</h4>
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b>Teaching Assistant</b> at IIT Guwahati for courses:<br/>
+                            Mobile Robotics, Smart Systems Laboratory, Peripherals & Interfacing Lab, Introduction to Computing, Computing Laboratory<br/>
+                            Delivered course on Webots simulator to Ph.D. and Graduate students<br/>
+                            Conducted AI course for NIPER students on Artificial Intelligence in Medical Devices (07.2021–08.2021)
+                        </p>
+
+                        <h4 style="text-shadow: 2px 2px gray; margin-top: 30px;">Reviewer Experience</h4>
+                        <p style="color:black;text-align:left; margin-bottom: 10px;">
+                            <b>Journals</b>:<br/>
+                            International Journal of Intelligent Robotics and Applications (2025)<br/>
+                            IETE Technical Review (2025)
+                        </p>
+                        <p style="color:black;text-align:left; margin-bottom: 15px;">
+                            <b>Conferences</b>:<br/>
+                            International Conference on Pattern Recognition (ICPR) 2024, 2026
+                        </p>
+
+                        <h4 style="text-shadow: 2px 2px gray; margin-top: 30px;">Certifications</h4>
+                        <p style="color:black;text-align:left;">
+                            Speech Processing (IIT Guwahati) • Artificial Intelligence (IIT Guwahati) • Mobile Robotics (IIT Guwahati) • 
+                            Advanced Topics in AI (IIT Guwahati) • Machine Learning (Coursera) • Neural Networks and Deep Learning (Coursera) • 
+                            Improving Deep Neural Networks (Coursera) • Structuring ML Projects (Coursera) • Dynamical Systems and Chaos • 
+                            CNN (Coursera) • Generative AI (IBM) • AI Agents (IBM)
+                        </p>
+
                         <h4 style="text-shadow: 2px 2px gray;">Publications</h4>
                         
                         <h5 style="text-shadow: 1px 1px gray; margin-top: 20px; border-bottom: 2px solid #333; padding-bottom: 10px;">Journals</h5>
@@ -181,7 +399,7 @@
                         </p>
                         
                         <p style="color:black;text-align:left; margin-bottom: 15px;">
-                            <b><a href="https://doi.org/10.1145/3638530.3654392" target="_blank" style="text-decoration:none; color:black;">Onboard Class Incremental Learning for Resource-Constrained Scenarios Using Genetic Algorithm and TinyML</a></b>
+                            <b><a href="https://doi.org/10.1145/3638530.3654392" target="_blank" style="text-decoration:none; color:black;">Onboard Class Incremental Learning for Resource-Constrained Scenarios using Genetic Algorithm and TinyML</a></b>
                             <br/>
                             S. K. Pandey and S. B. Nair. GECCO '24 Companion.
                             <span class="rank-badge rank-a">CORE2023 A</span>
@@ -201,87 +419,77 @@
                         </p>
 			    
 			 
-			 <h4 style="text-shadow: 2px 2px gray; text-align:right; margin-top: 30px;">Invited Talks/Demonstrations</h4>
+			 <h4 style="text-shadow: 2px 2px gray; text-align:right; margin-top: 30px;">Invited Talks & Workshops</h4>
                             <p style="text-align:right;">
-                            <b>TEQIP-III Workshop on Recent Trends in Embedded System for IoT and Mechatronics (RTESTM-2019), <br/>
-                            National Institute of Technology Arunachal Pradesh</b>,<br/>
+                            <b>TEQIP-III Workshop on Recent Trends in Embedded System for IoT and Mechatronics (RTESTM-2019)</b><br/>
+                            National Institute of Technology Arunachal Pradesh<br/>
                             Prof. Shivashankar B. Nair, Suraj Pandey, Divya D. Kulkarni and Menaxi Bagchi<br/>
-                            <i style="color:black;">24.09.2019-28.09.2019</i>
+                            <i style="color:black;">24.09.2019–28.09.2019</i>
 			    </p>
 			    
 			    <p style="text-align:right;">
-                            <b>ATAL Workshop on IoT and Cyber Security, <br/>
-                            Indian Institute of Technology Guwahati</b>,<br/>
+                            <b>ATAL Workshop on IoT and Cyber Security</b><br/>
+                            Indian Institute of Technology Guwahati<br/>
                             Prof. Shivashankar B. Nair, Suraj Pandey, Divya D. Kulkarni and Menaxi Bagchi<br/>
-                            <i style="color:black;">19.08.2019-23.08.2019</i>
+                            <i style="color:black;">19.08.2019–23.08.2019</i>
 			    </p>
 			    
 			    <p style="text-align:right;">
-                            <b>TEQIP FDP Organized by the Dept. of Mechanical Engineering, <br/>
-                            Indian Institute of Technology Guwahati</b>,<br/>
+                            <b>TEQIP FDP: Recent Trends in Cyber-Physical Systems</b><br/>
+                            Department of Mechanical Engineering, Indian Institute of Technology Guwahati<br/>
                             Prof. Shivashankar B. Nair, Suraj Pandey, Divya D. Kulkarni and Menaxi Bagchi<br/>
                             <i style="color:black;">03.2019</i>
 			    </p>
 			 
 			 
-			 <h4 style="text-shadow: 2px 2px gray;">Events</h4>
-                            <p >
-                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">17th National Frontiers of Engineering (NatFoE) Symposium</a></b>,<br/>
-                            NatFoE'23 was organised by the Indian National Academy of Engineering in collaboration with Birla Institute of Technology Mesra under the aegis of INAE-SERB conclave on Atmospheric Science and Technology<br/>
-			    Nominated from the Institute for participation in the research symposium<br/>
-                            <i style="color:black;">24.06.2023-26.06.2023</i>
-			    </p>
-			    
-			    <p >
-                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">Research Week with Google, Google Research India</a></b>,<br/>
+			 <h4 style="text-shadow: 2px 2px gray;">Awards & Recognition</h4>
+                            <p style="color:black;text-align:left;">
+                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">17th National Frontiers of Engineering (NatFoE) Symposium 2023</a></b><br/>
+                            Nominated from the Institute for participation in the research symposium<br/>
+                            <i style="color:gray;">24.06.2023–26.06.2023</i><br/><br/>
+                            
+                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">Research Week with Google, Google Research India</a></b><br/>
                             Selected for participation in the research symposium<br/>
-                            <i style="color:black;">08.02.2022-11.02.2022</i>
-			    </p>
-			    
-			    <p  >
-                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">TOYCATHON 2021</a></b>,<br/>
-                            Reached the finals of the nationwide gaming Hackathon which was inaugurated by Hon'ble Prime Minister Narendra Modi<br/>
-                            <i style="color:black;">05.2021</i>
+                            <i style="color:gray;">08.02.2022–11.02.2022</i><br/><br/>
+                            
+                            <b>AAAI-24 Student Scholarship and Volunteer Program</b><br/>
+                            Awarded scholarship and volunteering opportunity at the AAAI 2024 conference (CORE A*)<br/><br/>
+                            
+                            <b>GECCO 2024 Scholarship</b><br/>
+                            Travel scholarship for GECCO 2024 conference<br/><br/>
+                            
+                            <b><a href="https://ieeexplore.ieee.org/document/9359702" target="_blank" style="text-decoration:none; color:black;">TOYCATHON 2021</a></b><br/>
+                            Reached the finals of the nationwide gaming Hackathon inaugurated by Prime Minister Narendra Modi<br/>
+                            <i style="color:gray;">05.2021</i>
 			    </p>
 
-			<h4 style="text-shadow: 2px 2px gray;">Grants and Volunteering</h4>
-                            <p >
-                            <b><a href="" target="_blank" style="text-decoration:none; color:black;">AAAI-24 Student Scholarship and Volunteer Program</a></b>,<br/>
-                            Awarded scholarship and volunteering opportunity at the AAAI 2024 conference (CORE A*).<br/>
-                            <i style="color:black;">24.06.2023-26.06.2023</i>
-			    </p>
-			    	
-			    
-                        <h4 style="text-shadow: 2px 2px gray; text-align:right;">Mini-Projects</h4>
+                        <h4 style="text-shadow: 2px 2px gray; text-align:right; margin-top: 30px;">Projects & Contributions</h4>
                             <p style="text-align:right;">
                             <b>Gait Mapping using IMU Sensor and ESP8266</b><br/>
-                            <a href="https://github.com/surajkumarpandey/Gait-mapping-using-ESP8266-and-MPU6050" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
+                            <a href="https://github.com/surajkumarpandey/Gait-mapping-using-ESP8266-and-MPU6050" target="_blank" style="text-decoration:none; color:black;">Repository</a>
                             </p>
                                                         
                             <p style="text-align:right;">
-                            <b>Interfacing 3D Robot Simulator (<i>Webots</i>) with Prolog</b><br/>
-                            <a href="https://github.com/surajkumarpandey/Python-Prolog-Socket-Communication-Prolog-based-Webots-control" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
+                            <b>Interfacing 3D Robot Simulator (Webots) with Prolog</b><br/>
+                            <a href="https://github.com/surajkumarpandey/Python-Prolog-Socket-Communication-Prolog-based-Webots-control" target="_blank" style="text-decoration:none; color:black;">Repository</a>
                             </p>
                             
                             <p style="text-align:right;">
                             <b>Object Localisation using Genetic Algorithm</b><br/>
-                            <a href="https://github.com/surajkumarpandey/Genetic-Algorithm-for-object-detection" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
+                            <a href="https://github.com/surajkumarpandey/Genetic-Algorithm-for-object-detection" target="_blank" style="text-decoration:none; color:black;">Repository</a>
+                            </p>
+
+                            <p style="text-align:right;">
+                            <b>Tartarus Multi-Agent System Contributions</b><br/>
+                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus" target="_blank" style="text-decoration:none; color:black;">Repository</a>
+                            </p>
+
+                            <p style="text-align:right;">
+                            <b>Android Gaming App</b><br/>
+                            4000+ users • Toycathon 2021 finalist • Presented before Prime Minister Narendra Modi<br/>
+                            <a href="https://play.google.com/store/apps/details?id=comhanuman.endlesshanuman.game" target="_blank" style="text-decoration:none; color:black;">Play Store</a>
                             </p>
 			    
-			<h4 style="text-shadow: 2px 2px gray;">Open Source Contribution</h4>
-                            <p>
-                            <b>Tartarus for Raspberry Pi</b><br/>
-                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus/blob/master/Raspberry-Pi/README.md" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
-                            </p>
-			    
-			    <p>
-                            <b>Text-to-Speech and Other Functionalities for Tartarus</b><br/>
-                            <a href="https://github.com/roboticslab-cseiitg/ProjectTartarus" target="_blank" style="text-decoration:none; color:black;">Github Repo</a>
-                            </p>
-                                                        
-                           
-                            
-                            
                     </div>
                 </div>
             </div>
@@ -295,22 +503,23 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
-                        <h1>Socials </h1>
-                        <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">Know me professionally</h4>
+                        <h1>Socials</h1>
+                        <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">Professional Networks</h4>
                             <p style="color:black;text-align:left;" >
-                            <a href="https://in.linkedin.com/in/surajkumarpandey" target="_blank" style="text-decoration:none;">Linkedin</a><br/>
-			     <a href="https://www.researchgate.net/profile/Suraj-Pandey-4" target="_blank" style="text-decoration:none;">Researchgate</a><br/>
+                            <a href="https://in.linkedin.com/in/surajkumarpandey" target="_blank" style="text-decoration:none;">LinkedIn</a><br/>
+			     <a href="https://www.researchgate.net/profile/Suraj-Pandey-4" target="_blank" style="text-decoration:none;">ResearchGate</a><br/>
+                             <a href="https://aaai.org/" target="_blank" style="text-decoration:none;">AAAI Member</a>
 			    </p>
-                        <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">My leisure space</h4>
+                        <h4 style="text-shadow: 1px 1px gray; color:black;text-align:left;">Creative Space</h4>
                             <p style="color:black;text-align:left;" >
                             <b>Writing</b><br/>
-                            <a href="http://surrealsuraj.blogspot.com/" target="_blank" style="text-decoration:none; color:gray;">Blogspot</a><br/>
+                            <a href="http://surrealsuraj.blogspot.com/" target="_blank" style="text-decoration:none; color:gray;">Blogspot</a> • 
                             <a href="https://surajkpandey.medium.com/" target="_blank" style="text-decoration:none; color:gray;">Medium</a>
                             </p>
                             
                             <p style="color:black;text-align:left;" >
                             <b>Game Development</b><br/>
-                            <a href="https://play.google.com/store/apps/details?id=comhanuman.endlesshanuman.game" target="_blank" style="text-decoration:none; color:gray;">Android</a>
+                            <a href="https://play.google.com/store/apps/details?id=comhanuman.endlesshanuman.game" target="_blank" style="text-decoration:none; color:gray;">Android App</a>
                             </p>
                             
                             
@@ -328,7 +537,7 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center" >
                     <div class="col-lg-10">
-                        
+                        <h1 style="text-align:center;">My Lens</h1>
 	<div class="stack">
     <div class="imagewrap">
       <img src="./assets/gallery/1.jpg" class="confirmed" />
@@ -345,19 +554,6 @@
     <div class="imagewrap">
       <img src="./assets/gallery/7.jpg" class="confirmed" />
     </div>
-		<!--<div style="max-height:5px;">
-			<marquee direction = "up" scrollamount=3>
-                       		  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">The only way out is in</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">Your answers tell what you are, your questions tell what you can be</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">Fortify the core</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">When a person can't find a deep sense of meaning, they distract themselves with pleasure</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">Live as if you were to die tomorrow. Learn as if you were to live forever.</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">Its the hardest to pursue simplicity</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">Your life is an extrapolation of your day.</i><br/><br/><br/><br/><br/><br/>
-				  <i style="color:white;text-shadow: 1px 1px gray;text-align:center;">Bliss is a choice, not a consequence.</i><br/><br/><br/><br/><br/><br/>
-                          </marquee>-->
-		</div>
-  </div>
   </div>
   </div>
   </div>
@@ -366,30 +562,39 @@
 	    
 	    
 
-        <!-- Map-->
-        <div class="map" id="contact">
-        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14319.988544916596!2d91.68743913985139!3d26.19677143505719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5aea12213"></iframe>
-	</div>
+        <!-- Contact Section -->
+        <section class="content-section" id="contact">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>Get In Touch</h1>
+                        <div class="contact-card">
+                            <h3>Let's Connect</h3>
+                            <p>I'm always interested in collaborating on research, discussing AI and robotics, or exploring new opportunities.</p>
+                            <div class="contact-info">
+                                <p><strong>Email</strong></p>
+                                <p>
+                                    <a href="mailto:suraj18a@iitg.ac.in">suraj18a@iitg.ac.in</a><br/>
+                                    <a href="mailto:pandey.suraj3@gmail.com">pandey.suraj3@gmail.com</a>
+                                </p>
+                                <p style="margin-top: 20px;"><strong>Phone</strong></p>
+                                <p>+91-8377016608</p>
+                                <p style="margin-top: 20px;"><strong>Based In</strong></p>
+                                <p>Guwahati, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
-                <!--
-                <ul class="list-inline mb-5">
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
-                    </li>
-                </ul> -->
-                <p class="text-muted small mb-0">Copyright &copy; Suraj Kumar Pandey 2022 <br/> Email: suraj18a@iitg.ac.in, pandey.suraj3@gmail.com </p> 
+                <p class="text-muted small mb-0">Copyright &copy; Suraj Kumar Pandey 2022 | Last Updated: March 2026</p> 
 		<!-- hitwebcounter Code START -->
 <a href="" target="_blank" style="text-decoration: None;"> Visitor Count: 
-<img src="https://hitwebcounter.com/counter/counter.php?page=8022650&style=0011&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                              
-                                    
+<img src="https://hitwebcounter.com/counter/counter.php?page=8022650&style=0011&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter" border="0" /></a>                                    
                  </div>
         </footer>
         <!-- Scroll to Top Button-->
